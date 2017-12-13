@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="b161667a-b3bb-4d4a-a3e5-fa18041c6e00" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="" ResultsLocale="">
+  <Items>
+    <Request Method="POST" Guid="cc5ad464-21e2-48d9-89be-b1439c7fffae" Version="1.1" Url="http://cwiazgateway.azurewebsites.net/v1/Account/register" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Origin" Value="http://cwiazgateway.azurewebsites.net" />
+        <Header Name="Content-Type" Value="application/json-patch+json" />
+        <Header Name="DNT" Value="1" />
+      </Headers>
+      <StringHttpBody ContentType="application/json-patch+json" InsertByteOrderMark="False">ewAKACAAIAAiAG4AYQBtAGUAIgA6ACAAIgBzAHQAcgBpAG4AZwAiACwACgAgACAAIgBlAG0AYQBpAGwAIgA6ACAAIgBzAHQAcgBpAG4AZwAiACwACgAgACAAIgBwAGEAcwBzAHcAbwByAGQAIgA6ACAAIgBzAHQAcgBpAG4AZwAiAAoAfQA=</StringHttpBody>
+    </Request>
+  </Items>
+</WebTest>
