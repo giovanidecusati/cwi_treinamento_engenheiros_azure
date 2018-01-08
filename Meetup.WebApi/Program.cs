@@ -27,7 +27,6 @@ namespace Meetup.WebApi
             WebHost.CreateDefaultBuilder(args)
                 .UseApplicationInsights()
                 .UseStartup<Startup>()
-                .UseApplicationInsights()
                 .Build();
     }
 }

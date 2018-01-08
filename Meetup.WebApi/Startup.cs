@@ -115,12 +115,6 @@ namespace Meetup.WebApi
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Meetup");
             });
-
-            app.Use((request, r) =>
-            {
-                var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-                return;
-            });
         }
     }
 }

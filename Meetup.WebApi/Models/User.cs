@@ -1,4 +1,5 @@
-﻿using FluentValidator;
+﻿using Meetup.WebApi.Infrastructure.Notifications;
+using Meetup.WebApi.Infrastructure.Validators;
 using System;
 using System.Security.Cryptography;
 using System.Text;

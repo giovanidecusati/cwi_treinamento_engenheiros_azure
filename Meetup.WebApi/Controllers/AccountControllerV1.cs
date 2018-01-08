@@ -1,6 +1,8 @@
-﻿using FluentValidator;
-using Meetup.WebApi.Commands;
+﻿using Meetup.WebApi.Commands;
 using Meetup.WebApi.Infrastructure.Data;
+using Meetup.WebApi.Infrastructure.IntegrationEvents;
+using Meetup.WebApi.Infrastructure.Notifications;
+using Meetup.WebApi.Infrastructure.Security;
 using Meetup.WebApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,13 +11,11 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
-using Meetup.WebApi.Infrastructure.Security;
-using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
-using Meetup.WebApi.Infrastructure.IntegrationEvents;
 
 namespace Meetup.WebApi.Controllers
 {

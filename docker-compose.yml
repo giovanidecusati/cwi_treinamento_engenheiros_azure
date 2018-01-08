@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  meetup.webapi:
+    image: meetup.webapi
+    build:
+      context: .
+      dockerfile: Meetup.WebApi/Dockerfile

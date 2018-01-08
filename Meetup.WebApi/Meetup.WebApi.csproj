@@ -5,6 +5,7 @@
     <ApplicationInsightsResourceId>/subscriptions/c1bda0fc-c0e3-4b89-be00-0524b96b7b0f/resourcegroups/cwidemopaas-rg/providers/microsoft.insights/components/cwiazgateway</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/c1bda0fc-c0e3-4b89-be00-0524b96b7b0f/resourcegroups/cwidemopaas-rg/providers/microsoft.insights/components/cwiazgateway</ApplicationInsightsAnnotationResourceId>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidator" Version="1.0.5" />
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.2.0-beta1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="2.0.0" />
