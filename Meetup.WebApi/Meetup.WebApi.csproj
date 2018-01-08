@@ -6,6 +6,7 @@
     <ApplicationInsightsAnnotationResourceId>/subscriptions/c1bda0fc-c0e3-4b89-be00-0524b96b7b0f/resourcegroups/cwidemopaas-rg/providers/microsoft.insights/components/cwiazgateway</ApplicationInsightsAnnotationResourceId>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>40e33747-5ef9-43f3-a002-54ad3fed8156</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
