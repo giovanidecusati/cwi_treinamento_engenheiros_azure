@@ -2,6 +2,7 @@
 using Meetup.WebApi.Infrastructure.Filters;
 using Meetup.WebApi.Infrastructure.IntegrationEvents;
 using Meetup.WebApi.Models;
+using Microsoft.ApplicationInsights;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +35,8 @@ namespace Meetup.WebApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationInsightsTelemetry(Configuration);
+
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(HttpGlobalExceptionFilter));
@@ -72,6 +75,9 @@ namespace Meetup.WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.ApplicationServices
+                .GetService<TelemetryClient>().Context.Properties["Environment"] = env.EnvironmentName;
+
             if (env.IsDevelopment())
             {
 
